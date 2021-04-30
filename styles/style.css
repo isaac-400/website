@@ -1,30 +1,22 @@
 html {
     font-size: clamp(1em, 1.5vw , 1.5em);
-	font-family: 'IBM Plex Serif', serif ;
+	  font-family: "Lucida Bright", Georgia, serif ;
     font-weight: 400;
 }
 
 body {
   background: #e1dad2 ;
-  color: #0c2431;
+  color: #1b1b1b;
   max-width: 75%;
   margin: auto;
 }
 
-h1 {
+h1, h2, h4 {
 	text-align: center;
 }
 
-h2 {
-	text-align: center;
-}
-
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: 700;
-}
-
-h4 {
-    text-align: center;
 }
 
 strong {
