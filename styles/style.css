@@ -1,6 +1,6 @@
 html {
     font-size: clamp(1em, 1.5vw , 1.5em);
-	  font-family: "Lucida Bright", Georgia, serif ;
+	  font-family: Georgia, serif ;
     font-weight: 400;
 }
 
@@ -15,29 +15,12 @@ h1, h2, h4 {
 	text-align: center;
 }
 
-h1, h2, h3, h4 {
-    font-weight: 700;
-}
-
-strong {
+h1, h2, h3, h4, strong  {
     font-weight: 700;
 }
 
 a {
     color: #194a50;
-}
-#left {
-    float:left;
-    width: 75%;
-}
-
-#right {
-	float: left;
-    width: 25%;
-}
-
-#intro {
-    padding: 1em;
 }
 
 .row {
@@ -52,31 +35,6 @@ a {
 .noMargin {
   margin: 0px;
 }
-
-.contactblock {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1em;
-}
-
-table {
-  border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
-  letter-spacing: 1px;
-  font-size: 0.9rem;
-}
-
-td, th {
-  border: 1px solid rgb(190,190,190);
-  padding: 0.25em 1em;
-  text-align: center
-}
-
-.thumbnail {
-    padding: 1em;
-    border-radius: 25%;
-}
-
 
 @media screen and (max-width:420px) {
     #intro {
