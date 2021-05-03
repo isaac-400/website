@@ -3,40 +3,36 @@ html {
 	  font-family: Georgia, serif ;
     font-weight: 400;
 }
-
 body {
   background: #e1dad2 ;
   color: #1b1b1b;
   max-width: 75%;
   margin: auto;
 }
-
 h1, h2, h4 {
 	text-align: center;
 }
-
 h1, h2, h3, h4, strong  {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 a {
     color: #194a50;
 }
-
 .row {
   display: flex;
   width: 100%;
 }
-
 .row div {
   width: 50%;
 }
-
 .noMargin {
   margin: 0px;
 }
-
-@media screen and (max-width:420px) {
+#left {
+  float:left;
+  width: 50%;
+}
+@media screen and (max-width:500px) {
     #intro {
         padding: 1em 1em 0em 1em;
     }
@@ -46,5 +42,4 @@ a {
         display: flex;
         justify-content: center;
     }
-
 }
