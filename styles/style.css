@@ -24,11 +24,32 @@ a:hover{
 	background:#afcfd3;
 }
 
-div {
+div.intro {
   text-align:center;
   float:left;
   width: 50%;
   line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity:0;
+  } to {
+    opacity:1;
+  }
+}
+
+.fade-in {
+ opacity:0;
+ animation:fadeIn ease-in 1;
+ animation-fill-mode:forwards;
+ animation-duration:.5s;
+ animation-delay: 0.3s;
+}
+
+.inner{
+	width:90%;
+	margin:auto;
 }
 
 @media screen and (max-width:500px) {
