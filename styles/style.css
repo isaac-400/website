@@ -1,45 +1,43 @@
 html {
     font-size: clamp(1em, 1.5vw , 1.5em);
-	  font-family: Georgia, serif ;
+    font-family: Georgia, serif ;
     font-weight: 400;
 }
 body {
   background: #e1dad2 ;
   color: #1b1b1b;
-  max-width: 70%;
+  max-width: 50%;
   margin: auto;
-}
-h1, h2, h4 {
-	text-align: center;
 }
 h1, h2, h3, h4, strong  {
   font-weight: 700;
 }
 a {
+    font-style: italic;
     color: #194a50;
 }
-.row {
-  display: flex;
-  width: 100%;
+a.big {
+    font-weight: 600;
+    text-decoration: underline wavy 5%;
 }
-.row div {
-  width: 50%;
+a:hover{
+	background:#afcfd3;
 }
-.noMargin {
-  margin: 0px;
-}
-#left {
+
+div {
+  text-align:center;
   float:left;
   width: 50%;
+  line-height: 1.5;
 }
+
 @media screen and (max-width:500px) {
     #intro {
         padding: 1em 1em 0em 1em;
     }
-    #left, #right {
+    #intro-text, #intro-image {
         float: none;
         width: 100%;
-        display: flex;
-        justify-content: center;
+	text-align:center;
     }
 }
