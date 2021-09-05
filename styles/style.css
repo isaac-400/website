@@ -47,4 +47,18 @@ table {
 	width:90%;
 	margin:auto;
 }
+@media screen and (max-width:500px) {
+  table {
+   margin:auto; 
+   padding: 0em;
+  text-align: center; 
+  }
+  tr:last-child td {
+   display:table-footer-group;
+  }
+  img {
+    width: 160px;
+  }
+
+}
 
