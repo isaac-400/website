@@ -1,0 +1,5 @@
+#+title: First Post
+#+author: Isaac Feldman
+#+options: :toc nil
+
+This is the first post on this blog! Not sure how what I'll write in these, but blogs are a good thing to have.
