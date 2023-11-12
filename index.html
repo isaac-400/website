@@ -1,36 +1,116 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
-<head>
-    <link href="/styles/style.css"  type="text/css" rel="stylesheet">
-	<title>Isaac Feldman</title>
+  <head>
+	  <title>Isaac Feldman</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <style>
+      :root {
+          --accent-color: #eeeeee;
+          --shadow-color: #bbbbbb;
+      }
+      
+      body {
+          width: 50%;
+          margin: auto;
+      }
+      
+      header {
+          padding: 1vh;
+          width: fit-content;
+          margin: auto;
+          columns: 200px 2;
+      }
+      
+      header > img {
+          display: block;
+          align-self: center;
+          max-width: 180px;
+          border: 4px solid var(--shadow-color);
+          border-radius: 50%;
+          margin: auto;
+      }
 
-<body>
-  <table>
-    <tr>
+      hr {
+          border-width: 1px;
+          border-color: var(--shadow-color);
+      }
+      
+      details > summary {
+          padding: 4px;
+          background-color: var(--accent-color);
+          border: none;
+          box-shadow: 1px 1px 2px var(--shadow-color);
+          cursor: pointer;
+      }
 
-      <td>
-        <h1> Isaac Feldman </h1>
-        <p>A student at Dartmouth College studying <a class="big" href="/pages/comp-sci.html">computer&nbsp;science and linguistics</a> who designs <a class="big" href="/pages/book-arts.html">book&nbsp;arts&nbsp;projects</a> and volunteers with <a class="big" href="https://engage.dartmouth.edu/organization/access-dartmouth">Access&nbsp;Dartmouth</a>.</p>
-      </td>
+      summary >  hr {
+         border: 1px dashed;
+      }
 
-      <td> 
-        <img src="/images/isaac.webp" alt="photo of Isaac" width="300px" style="border-radius: 15%; padding:2em;"> 
-      </td>
+      details > p {
+          background-color: var(--accent-color);
+          padding: 4px;
+          margin: 0;
+          box-shadow: 1px 1px 2px var(--shadow-color);
+      }
 
-    </tr>
-  </table>
+      nav {
+          text-align: center;
+      }
+    </style>
+  </head>
 
-    <nav style="text-align:center; padding-bottom:3em">
-      <a href="/pages/CV.html">CV</a> |
-      <a href="mailto:isaac.c.feldman.23@dartmouth.edu">Email</a> | 
+  <body>
+    <header>
+      <img src="images/isaac.webp" alt="photo of Isaac giving a speech" loading="lazy">
+      <h2>Isaac Feldman</h2>
+      <address>
+        isaaccfeldman (at) gmail (dot) com
+      </address>
+    </header>
+
+    <main>
+      <hr>
+      <p>
+        I'm a software engineer and Dartmouth alum in the Seattle area. I love studying computational linguistics and compilers. Check out my work on <a href="https://github.com/isaac-400">Github</a>. 
+      </p>
+
+      <section>
+        <h1>News:</h1>
+        <ul>
+          <li>Updated the website with a fresh, moblie-friendlier look!</li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>Posts:</h1>
+        <ul>
+          <li><a href="posts/first-post.html">First Post - <time datetime="2023-11-12">Nov 12 2023</time></a></li>
+        </ul>
+      </section>
+      
+      <section>
+        <h1>Publications:</h1>
+            <details>
+              <summary>
+                NMT Models with Back-Translation for the Extremely Low-Resource Indigenous Language Bribri (2020)
+                <hr>
+                <span><a href="docs/2020.coling-main.351.pdf">[pdf (300KB)]</a> <a href="http://dx.doi.org/10.18653/v1/2020.coling-main.351">[acm]</a></span>
+              </summary>
+              <p> Abstract: The paper presents a neural machine translation model and dataset for the Chibchan language Bribri, with an average performance of BLEU 16.9±1.7. This was trained on an extremely small dataset (5923 Bribri-Spanish pairs), providing evidence for the applicability of NMT in extremely low-resource environments. We discuss the challenges entailed in managing training input from languages without standard orthographies, we provide evidence of successful learning of Bribri grammar, and also examine the translations of structures that are infrequent in major Indo-European languages, such as positional verbs, ergative markers, numerical classifiers and complex demonstrative systems.</p>
+            </details>
+      </section>
+      <hr>
+    </main>
+
+    <nav>
+      <a href="pages/CV.html">CV</a> | 
       <a href="https://github.com/isaac-400">Git</a> | 
       <a href="https://www.linkedin.com/in/isaac-c-feldman/">LinkedIn</a> | 
-      <a href="/pubkey.txt" download>PGP</a> 
+      <a href="pubkey.txt" download>PGP Key</a> 
     </nav>
-</body>
+    
+  </body>
 
 </html>
