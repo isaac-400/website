@@ -5,24 +5,12 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Isaac Feldman's Personal Website.">
+    <link rel="stylesheet" href="sakura.css"/>
+    <link rel="stylesheet" href="sakura-earthly.css" media="screen" />
+    <link rel="stylesheet" href="sakura-dark.css" media="screen and (prefers-color-scheme: dark)" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
     <style>
-      :root {
-          --accent-color: #eeeeee;
-          --shadow-color: #bbbbbb;
-      }
-      
-      body {
-          width: 50%;
-          margin: auto;
-      }
-      
-      header {
-          padding: 1vh;
-          width: fit-content;
-          margin: auto;
-          columns: 200px 2;
-      }
-      
       header > img {
           display: block;
           align-self: center;
@@ -32,36 +20,15 @@
           aspect-ratio: 1;
       }
 
-      hr {
-          border-width: 1px;
-          border-color: var(--shadow-color);
-      }
-      
-      details > summary {
-          padding: 4px;
-          background-color: var(--accent-color);
-          border: none;
-          box-shadow: 1px 1px 2px var(--shadow-color);
-          cursor: pointer;
-      }
-
-      summary >  hr {
-         border: 1px dashed;
-      }
-
-      details > p {
-          background-color: var(--accent-color);
-          padding: 4px;
-          margin: 0;
-          box-shadow: 1px 1px 2px var(--shadow-color);
-      }
-
       nav {
           text-align: center;
       }
+
+      html {
+          font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+          font-weight: normal;
+      }
     </style>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="icon" href="favicon.ico" />
   </head>
 
   <body>
@@ -69,40 +36,32 @@
       <img src="images/isaac.webp" alt="photo of Isaac giving a speech" width=200px height=200px>
       <h2>Isaac Feldman</h2>
       <address>
-        isaaccfeldman (at) gmail (dot) com
+        isaaccfeldman@gmail.com
       </address>
     </header>
 
     <main>
       <hr>
-      <p>
-        I'm a software engineer and Dartmouth alum in the Seattle area. I love studying computational linguistics and compilers. Check out my work on <a href="https://github.com/isaac-400">Github</a>. 
-      </p>
-
+      <p>I'm a software engineer in the Seattle area. I work at Amazon on the data plane that orchestrates <a href="https://aws.amazon.com/fargate/">AWS Fargate</a>, a serverless compute platform for containers. In my free time, I also build websites for cool artists.</p>
+      <p>Previously I studied computer science and linguistics at Dartmouth College. When I wasn't studying, I was teaching letterpress printing and bookbinding in the <a href="https://www.library.dartmouth.edu/book-arts">Dartmouth Library Book Arts Workshop.</a></p>
+      <p>I'm interested in the intersection of computer science and language. From language models to keyboard layouts, I'm fascinated with how language has influenced computing and how computing has shaped language. I also love <a href="https://huge-bread.click/soft-serve.html">soft-serve ice cream.</a></p>
       <section>
-        <h1>News:</h1>
+        <h2>News:</h2>
         <ul>
-          <li>Updated the website with a fresh, moblie-friendlier look!</li>
-        </ul>
-      </section>
-
-      <section>
-        <h1>Posts:</h1>
-        <ul>
-          <li><a href="posts/first-post.html">First Post - <time datetime="2023-11-12">Nov 12 2023</time></a></li>
+          <li><b>August 2023:</b> Joined AWS as a Software Development Engineer working on AWS Fargate.</li>
+          <li><b>June 2023:</b> Graduated from Dartmouth College with a B.A. in Computer Science and Linguistics.</li>
         </ul>
       </section>
       
       <section>
-        <h1>Publications:</h1>
-            <details>
-              <summary>
-                NMT Models with Back-Translation for the Extremely Low-Resource Indigenous Language Bribri (2020)
-                <hr>
-                <span><a href="docs/2020.coling-main.351.pdf">[pdf (300KB)]</a> <a href="http://dx.doi.org/10.18653/v1/2020.coling-main.351">[acl]</a></span>
-              </summary>
-              <p> Abstract: The paper presents a neural machine translation model and dataset for the Chibchan language Bribri, with an average performance of BLEU 16.9±1.7. This was trained on an extremely small dataset (5923 Bribri-Spanish pairs), providing evidence for the applicability of NMT in extremely low-resource environments. We discuss the challenges entailed in managing training input from languages without standard orthographies, we provide evidence of successful learning of Bribri grammar, and also examine the translations of structures that are infrequent in major Indo-European languages, such as positional verbs, ergative markers, numerical classifiers and complex demonstrative systems.</p>
-            </details>
+        <h2>Publications:</h2>
+        <details>
+          <summary>
+            NMT Models with Back-Translation for the Extremely Low-Resource Indigenous Language Bribri (2020)
+            <span><a href="docs/2020.coling-main.351.pdf">[pdf (300KB)]</a> <a href="http://dx.doi.org/10.18653/v1/2020.coling-main.351">[acl]</a></span>
+          </summary>
+          <p> Abstract: The paper presents a neural machine translation model and dataset for the Chibchan language Bribri, with an average performance of BLEU 16.9±1.7. This was trained on an extremely small dataset (5923 Bribri-Spanish pairs), providing evidence for the applicability of NMT in extremely low-resource environments. We discuss the challenges entailed in managing training input from languages without standard orthographies, we provide evidence of successful learning of Bribri grammar, and also examine the translations of structures that are infrequent in major Indo-European languages, such as positional verbs, ergative markers, numerical classifiers and complex demonstrative systems.</p>
+        </details>
       </section>
       <hr>
     </main>
@@ -110,8 +69,7 @@
     <nav>
       <a href="pages/CV.html">CV</a> | 
       <a href="https://github.com/isaac-400">Git</a> | 
-      <a href="https://www.linkedin.com/in/isaac-c-feldman/">LinkedIn</a> | 
-      <a href="pubkey.txt" download>PGP Key</a> 
+      <a href="https://www.linkedin.com/in/isaac-c-feldman/">LinkedIn</a>
     </nav>
     
   </body>
