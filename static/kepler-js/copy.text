@@ -1,0 +1,34 @@
+Johannes Kepler, a german mathematician, devised some of the most important relationships we
+know of in astronomy: the laws of planetary motion. 
+Kepler found by analyzing observations the motion of the planets in our solar system that
+the planets following clear relationships which he published in 1609.
+
+These simulations let you see what Kepler did (with the benefit of some hindsight!). 
+Play around with them and test your own hypotheses about planetary motion!
+
+
+- FIRST LAW - 
+Kepler's first law is a simple but powerful assertion: any orbiting body travels in an
+elliptical path. For things in our solar system that means that the planets travel in
+ellipses with the Sun at one of the foci.
+
+The planets in our solar system travel in near circular paths with the most eccentric
+planet being Mercury. [Eccentricity]
+
+- SECOND LAW - 
+Kepler's second law tells us about how orbiting bodies move along these ellipses.
+It states that for any equal area swept out by an orbiting body is traversed in the same
+time. Kepler drew this conclusion from noting that planets change speed as they orbit. 
+As they get closer to the Sun they speed up and when they are far away, they slow down.
+This is especially clear to see with commets or other bodies that pass close to the sun.
+
+- THIRD LAW -
+Kepler's third law gives us a powerful relation that we can use to estimate distances and
+masses of orbiting bodies near and far away. It states that the time it takes for a body
+to complete an orbit squared is proportional to its average distance from the star cubed.
+
+[MATH TYPE]
+
+Combining this relationship with [Newton's Law of Gravitation] allows us to estimate the
+masses of distant binary stars and oribitng exoplanets!
+

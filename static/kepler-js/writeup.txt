@@ -1,0 +1,39 @@
+Kepler's Laws Simulations 
+=========================================
+Isaac Feldman - 8/25/21
+
+I focused my project on the learning objectives surrounding Keplers laws:
+
+- Use Kepler's three laws to describe the motion of the planets.
+- Understand and use Newton's version of Kepler's 3rd law
+
+I tackle both of these learning objectives not only in the explainations visible in the
+final product, but also in the realization of the project. Initially I used Newton's law
+of gravitation to program a simulation of an orbiting planet to then prove Kepler's laws,
+but I ran into issues in making the program efficient to run in the web browser. Instead I
+used Kepler's laws and used his formulae to instead parameterize an ellipse and then
+animate the planet's orbit along that ellipse. I also used Kepler's relations between
+eccentric anomaly and true anomoly to plot the areas swept out by an orbiting planet.
+
+In the explainations accompanying the simulations, I tried to summarize the content
+effectively and briefly, leaving the interactivity to build the understanding in the user.
+Ultimately, from the begining, I believe that being able to tinker with the course
+concepts will make them stick and give students and the public a good working
+understanding of the science.
+
+I also released the code and webpage to the public, so other students, scientists and
+professors can hopefully use it to help spark people's curiosity of astronomy.
+
+
+Bibliograpy:
+------------
+
+Fraknoi, A., Morrison, D. and Wolff, S. (2016). "Astronomy". 
+  Houston, Texas Minneapolis: OpenStax College, Rice University, Open Textbook Library.
+
+Weisstein, Eric W. "Eccentricity." From <i>MathWorld</i>--A Wolfram Web Resource.
+  https://mathworld.wolfram.com/Eccentricity.html
+
+Williams, David R. (2019). "Planetary factsheet -- metric".
+  Greenbelt, Maryland: NASA Goddard Space Flight Center.
+  https://nssdc.gsfc.nasa.gov/planetary/factsheet/
