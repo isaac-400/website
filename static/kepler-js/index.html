@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!Load favicon>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪐</text></svg>"
+    <!Load MathJax>
+    <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <!Load p5js>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <!Load css>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <meta charset="utf-8">
+    <title>Kepler's Laws</title>
+  </head>
+  <body>
+    <nav><a href="/index.html">&larr; Back Home</a></nav>
+    <header>
+    <h1> Kepler's Laws of Planetary Motion </h1>
+    <address>
+      Created by <a href="mailto:isaac.c.feldman.23@dartmouth.edu">Isaac Feldman</a>.
+    </address>
+    <a href="./writeup.pdf">Writeup and Rationale</a>
+    </header>
+    <p>
+      Johannes Kepler, a german mathematician, devised some of the most important relationships we
+      know of in astronomy: the laws of planetary motion. 
+      After analyzing observations of the motion of the planets in our solar system, he found that
+      the planets following clear relationships and published these relationships in 1609.
+    </p>
+    <p>
+      These simulations let you see what Kepler did (with the benefit of some hindsight). 
+      Play around with them and test your own hypotheses about planetary motion!
+    </p>
+
+    <h2>First Law: Planets Move in Eliptical Orbits</h2>
+    <div class="sketch" id='k1' ></div>
+   	<figcaption>The planet moves in an ellipse, with the distance to the star constantly changing</figcaption> 
+    <p>
+      Kepler's first law is a simple but powerful assertion: any orbiting body travels in an
+      elliptical path. For things in our solar system that means that the planets travel in
+      ellipses with the Sun at one of the foci.
+
+      The planets in our solar system travel in near circular paths with the most 
+      eccentric<sup><a href="#fn1" id="r1">[1]</a></sup>
+      planet being Mercury. 
+    </p>
+    
+    <h2>Second Law: Equal Areas swept out by a planet along its orbit will be traversed in the same time</h2>
+    <div class="sketch" id='k2'></div>
+   	<figcaption>Use the sliders the change how large an area to sweep out. The simulation will show how long it takes the planet to traverse this area</figcaption> 
+    <p>
+      Kepler's second law tells us about how orbiting bodies move along these ellipses.
+      It states that for any equal area swept out by an orbiting body is traversed in the same
+      time. Kepler drew this conclusion from noting that planets change speed as they orbit. 
+      As they get closer to the Sun they speed up and when they are far away, they slow down.
+      This is especially clear to see with commets or other bodies that pass close to the sun.
+    </p>
+
+    <h2>Third Law: The period of rotation is related to the semi major axis</h2>
+    <div class="sketch" id='k3'></div>
+   	<figcaption>Use the sliders to adjust the average distance between the planet and star and the eccentricity of the orbit. Watch how the orbital period changes</figcaption> 
+    <p>
+      Kepler's third law gives us a powerful relation that we can use to estimate distances and
+      masses of orbiting bodies near and far away. It states that the time it takes for a body
+      to complete an orbit squared is proportional to its average distance from the star cubed.
+    </p>
+    <p>
+      To be more specific:
+      $$
+      T^2 \propto a^3 
+      $$
+      Where \(T\) is the time it takes to complete one rotation (orbital period) and \(a\) is the average distance from the star (semi-major axis)
+    </p>
+    Combining this relationship with Newton's Law of Gravitation<sup><a href="#fn2" id="r2">[2]</a></sup> allows us to estimate the
+      masses of distant binary stars and oribitng exoplanets!
+    </p>
+
+    <p class="small">
+    </p>
+    
+    <section>
+      <h3> Footnotes</h3>
+      <p id="fn1"><a href="#r1">[1]</a> Eccentricity is the ratio of the distance between the center and a focus to the semi-major axis. The higher this value, the more streched the orbit is.</p>
+      <p id="fn2"><a href="#r2">[2]</a> Newton actually showed that the realtionship between orbital period and semi-major axis contains a factor that is the sum of the two bodies' masses: 
+      $$
+      \frac{a^3}{T^2} = G\frac{M+m}{4\pi^2}
+      $$
+      Where \(G\) is the gravitational constant, \(M\) and \(m\) are the masses of the bodies. So if you can measure semi-major axis and period, you can deduce the combined mass of the system!
+      Read more <a href="https://openstax.org/books/astronomy/pages/3-3-newtons-universal-law-of-gravitation">here</a>
+      </p>
+     <p> If you're interested in learning more <a href="https://openstax.org/books/astronomy/pages/3-1-the-laws-of-planetary-motion">OpenStax</a> has a great resource on this topic (with practice problems!). Check it out!</p>
+    </section>
+    <section>
+      <h3>References</h3>
+      <p> Fraknoi, A., Morrison, D. and Wolff, S. (2016). <i>Astronomy</i>. Houston, Texas Minneapolis: OpenStax College, Rice University,Open Textbook Library.</p>
+      <p> Weisstein, Eric W. "Eccentricity." From <i>MathWorld</i>--A Wolfram Web Resource. <a href="https://mathworld.wolfram.com/Eccentricity.html">https://mathworld.wolfram.com/Eccentricity.html</a></p>
+      <p> Williams, David R. (2019). "Planetary factsheet -- metric". Greenbelt, Maryland: NASA Goddard Space Flight Center. <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">https://nssdc.gsfc.nasa.gov/planetary/factsheet/</a></p>
+    </section>
+
+</body>
+    <footer style="text-align:center">
+      <br>
+      This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </footer>
+</html>

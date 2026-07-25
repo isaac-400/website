@@ -1,0 +1,23 @@
+header > img {
+    display: block;
+    align-self: center;
+    border: 4px solid var(--shadow-color);
+    border-radius: 50%;
+    margin: auto;
+    aspect-ratio: 1;
+}
+
+nav {
+    text-align: center;
+}
+
+html {
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    font-weight: normal;
+}
+
+a {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: from-font;
+}

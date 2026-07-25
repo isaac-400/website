@@ -1,0 +1,28 @@
+body {
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background: #e1dad2;
+  color: #1b1b1b;
+  max-width: 66vw;
+  margin: 40px auto;
+}
+h1, h2 {
+  line-height: 1.2;
+}
+figcaption {
+  font-size: 16px;
+  text-align: center;
+}
+.sketch {
+  width: 400px; 
+  position: relative;
+  margin: 0 auto;
+}
+a {
+  font-style: italic;
+  color: #194a50;
+}
+a:hover {
+  background: #afcfd3;
+}
