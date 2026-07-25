@@ -24,7 +24,7 @@ func main() {
 		slog.Error("failed to get web subfs", "error", err)
 		os.Exit(1)
 	}
-	http.Handle("/", withSecurityHeaders(http.FileServer(http.FS(webRoot))))
+	http.Handle("/", http.FileServer(http.FS(webRoot)))
 
 	slog.Info("Starting server")
 	var exitCode int
@@ -35,16 +35,4 @@ func main() {
 	}
 
 	os.Exit(exitCode)
-}
-
-// withSecurityHeaders adds basic browser security headers suitable for the
-// static frontend (self-hosted, no external resources).
-func withSecurityHeaders(h http.Handler) http.Handler {
-	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		hdr := w.Header()
-		hdr.Set("Content-Security-Policy", "default-src 'self'; script-src 'self'; style-src 'self'")
-		hdr.Set("Referrer-Policy", "no-referrer")
-		hdr.Set("X-Content-Type-Options", "nosniff")
-		h.ServeHTTP(w, r)
-	})
 }
